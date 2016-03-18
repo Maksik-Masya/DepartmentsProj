@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+    <display-name>SimpleJspServletDB</display-name>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <description></description>
+        <display-name>Delete Department</display-name>
+        <servlet-name>DeleteDepartmentController</servlet-name>
+        <servlet-class>com.mborodenko.controller.DeleteDepartmentController</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <display-name>Update Department</display-name>
+        <servlet-name>EditDepartmentController</servlet-name>
+        <servlet-class>com.mborodenko.controller.EditDepartmentController</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <display-name>Add Department</display-name>
+        <servlet-name>AddDepartmentController</servlet-name>
+        <servlet-class>com.mborodenko.controller.AddDepartmentController</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <display-name>List Departments</display-name>
+        <servlet-name>ListDepartmentController</servlet-name>
+        <servlet-class>com.mborodenko.controller.ListDepartmentController</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <display-name>List Employees</display-name>
+        <servlet-name>ListEmployeeController</servlet-name>
+        <servlet-class>com.mborodenko.controller.ListEmployeeOfDepartmentController</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <display-name>Update Employee</display-name>
+        <servlet-name>EditEmployeeController</servlet-name>
+        <servlet-class>com.mborodenko.controller.EditEmployeeController</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <display-name>Add Employee</display-name>
+        <servlet-name>AddEmployeeController</servlet-name>
+        <servlet-class>com.mborodenko.controller.AddOrEditEmployeeController</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <display-name>Delete Employee</display-name>
+        <servlet-name>DeleteEmployeeController</servlet-name>
+        <servlet-class>com.mborodenko.controller.DeleteEmployeeController</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <display-name>Department's Employees</display-name>
+        <servlet-name>ListEmployeeOfDepartmentController</servlet-name>
+        <servlet-class>com.mborodenko.controller.ListEmployeeOfDepartmentController</servlet-class>
+    </servlet>
+    <servlet>
+        <description></description>
+        <display-name>New Employee</display-name>
+        <servlet-name>NewEmployeeController</servlet-name>
+        <servlet-class>com.mborodenko.controller.NewEmployeeController</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>DeleteDepartmentController</servlet-name>
+        <url-pattern>/Delete-Department</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditDepartmentController</servlet-name>
+        <url-pattern>/Update-Department</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddDepartmentController</servlet-name>
+        <url-pattern>/Add-Department</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListDepartmentController</servlet-name>
+        <url-pattern>/List-Departments</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListEmployeeController</servlet-name>
+        <url-pattern>/List-Employeers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditEmployeeController</servlet-name>
+        <url-pattern>/Update-Employee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddEmployeeController</servlet-name>
+        <url-pattern>/Add-Employee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteEmployeeController</servlet-name>
+        <url-pattern>/Delete-Employee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ListEmployeeOfDepartmentController</servlet-name>
+        <url-pattern>/List-Employees-Of-Department</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewEmployeeController</servlet-name>
+        <url-pattern>/New-Employee-Form</url-pattern>
+    </servlet-mapping>
+</web-app>
